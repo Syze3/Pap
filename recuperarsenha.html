@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Trocas e Devoluções</title>
+    <title>Recuperar Senha</title>
     <style>
     body{
     background-color: rgb(255, 255, 255);
@@ -68,11 +68,16 @@
     
     <main class="flex-fill">
       <div class="container">
-        <h1>Política de Devoluções</h1>
-        <hr>
-        <p>
-          A Amazon aceita a devolução de produtos físicos até 30 dias a partir da data de recebimento do pedido, com exceção de produtos comestíveis, cujo prazo para devolução é até 7 dias após a data de recebimento. 
-        
+        <form action="">
+          <h1>Recuperar Senha</h1>
+          <label for="txtEmail">E-mail</label>
+          <input type="email" id="txtEmail">
+
+          <button type="button" onclick="window.location.href='/confirmrecupsenha.html'">Recuperar Senha</button>
+          <p>
+            Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
+          </p>
+        </form>
       </div>
       
     </main>
@@ -98,7 +103,7 @@
                   <a href="sobre.html" class="text-decoration-none text-dark">
                       Sobre a Amazon
                   </a> <br>
-                  
+
                   <a href="termos.html" class="text-decoration-none text-dark">
                     Termos e Usos da Amazon
                   </a> <br>
