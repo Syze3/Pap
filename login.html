@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Amazon Portugal</title>
+    <title>Acessar a Amazon</title>
     <style>
     body{
     background-color: rgb(255, 255, 255);
@@ -42,7 +42,7 @@
               <a class="nav-link text white active" href="index.html">Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contato.html">Contato</a>
+              <a class="nav-link text-white" href="contacto.html">Contacto</a>
             </li>
             </li>
             </ul>
@@ -68,7 +68,35 @@
     
     <main class="flex-fill">
       <div class="container">
+        <div class="row justify-content-center">
+          <form action="col-sm-10 col-md-8 col-lg-6">
+            <h1>Fazer Login</h1>
+  
+            <div class="form-floating mb-3">
+            <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus> 
+            <label for="txtEmail">E-mail</label>
+            </div>
 
+            <div class="form-floating mb-3">
+              <input type="password" id="txtpasse" class="form-control" placeholder=" " autofocus> 
+              <label for="txtpasse">Palavra-Passe</label>
+              </div>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
+                <label for="chkLembrar" class="form-check-label">Lembrar de mim</label>
+              </div>
+
+            <button type="button" onclick="window.location.href='/cliente_pedidos.html'" class="btn btn-lg btn-dark">Entrar</button>
+            <p class="mt-3">
+              Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
+            </p>
+
+            <p class="mt-3">
+              Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html"> Clica aqui</a> para recuperá-la.
+            </p>
+          </form>
+          </div>
       </div>
       
     </main>
