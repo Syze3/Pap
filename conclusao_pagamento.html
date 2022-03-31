@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/estilos.css">
 
-  <title>Acessar a Amazon</title>
+  <title>Conclusão da Compra</title>
   <style>
     body {
       background-color: rgb(255, 255, 255);
@@ -70,35 +70,47 @@
 
     <main class="flex-fill">
       <div class="container">
-        <div class="row justify-content-center">
-          <form action="col-sm-10 col-md-8 col-lg-6">
-            <h1>Fazer Login</h1>
-
-            <div class="form-floating mb-3">
-              <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
-              <label for="txtEmail">E-mail</label>
+        <h1>Selecione a Forma de Pagamento</h1>
+        <h3 class="mb-4">
+          Selecione a forma de pagamento e clique em <b>Continuar</b> para prosseguir para a <b>seleção da forma de
+            pagamento</b>.
+        </h3>
+        <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
+            <div class="mb-4 mx-2 flex-even">
+              <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="pag2">
+              <label class="btn btn-outline-dark p-4 h-100 w-100" for="pag2">
+                <h3>
+                  <b class="text-dark">Cartão de Crédito</b>
+                </h3>
+                  <hr>
+                  <form action="">
+                    <div class="form-floating mb-3">
+                      <input type="text" id="txtnome1" class="form-control" placeholder=" " autofocus>
+                      <label for="txtnome1" class="text-black-50">Nome Impresso no Cartão de Crédito</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" id="txtnumero" class="form-control" placeholder=" " autofocus>
+                      <label for="txtnumero" class="text-black-50">Número do Cartão de Crédito</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" id="txtvalidade" class="form-control" placeholder=" " autofocus>
+                      <label for="txtvalidade" class="text-black-50">Validade(mm/aa)</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="text" id="txtcvv" class="form-control" placeholder=" " autofocus>
+                      <label for="txtcvv" class="text-black-50">CVV(3 dígitos)</label>
+                    </div>
+                  </form>
             </div>
-
-            <div class="form-floating mb-3">
-              <input type="password" id="txtpasse" class="form-control" placeholder=" " autofocus>
-              <label for="txtpasse">Palavra-Passe</label>
-            </div>
-
-            <div class="form-check mb-3">
-              <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
-              <label for="chkLembrar" class="form-check-label">Não esquecer</label>
-            </div>
-
-            <button type="button" onclick="window.location.href='/cliente_pedidos.html'"
-              class="btn btn-lg btn-dark">Entrar</button>
-            <p class="mt-3">
-              Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
-            </p>
-
-            <p class="mt-3">
-              Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html"> Clica aqui</a> para recuperá-la.
-            </p>
-          </form>
+            </label>
+          </div>
+        </div>
+        <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">
+          <div style=text-align:center>
+          <a href="/conclusao_endereco.html" class="btn btn-outline-dark btn-lg mb-4">
+            Voltar ao Endereço
+          </a>
+          <a href="/conclusao_pedido.html" class="btn btn-dark btn-lg ms-2 mb-4">Finalizar</a>
         </div>
       </div>
 

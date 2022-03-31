@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/estilos.css">
 
-  <title>Acessar a Amazon</title>
+  <title>Registar</title>
   <style>
     body {
       background-color: rgb(255, 255, 255);
@@ -72,35 +72,28 @@
       <div class="container">
         <div class="row justify-content-center">
           <form action="col-sm-10 col-md-8 col-lg-6">
-            <h1>Fazer Login</h1>
-
-            <div class="form-floating mb-3">
-              <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
-              <label for="txtEmail">E-mail</label>
-            </div>
-
-            <div class="form-floating mb-3">
-              <input type="password" id="txtpasse" class="form-control" placeholder=" " autofocus>
-              <label for="txtpasse">Palavra-Passe</label>
-            </div>
-
-            <div class="form-check mb-3">
-              <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
-              <label for="chkLembrar" class="form-check-label">Não esquecer</label>
-            </div>
-
-            <button type="button" onclick="window.location.href='/cliente_pedidos.html'"
-              class="btn btn-lg btn-dark">Entrar</button>
-            <p class="mt-3">
-              Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
-            </p>
-
-            <p class="mt-3">
-              Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html"> Clica aqui</a> para recuperá-la.
-            </p>
-          </form>
-        </div>
-      </div>
+            <form data-multi-step>
+              <div class="card" data-step>
+                <h3 class="step-title">Este é o primeiro passo</h3>
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="margin-bottom:20px;">
+                  <label for="floatingInput" required>Endereço de Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required style="margin-bottom:20px;">
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingUsername" placeholder="Username" required style="margin-bottom:20px;">
+                  <label for="floatingUsername">Username</label>
+                </div>
+                <a href="index.html">
+                  <input class="btn btn-lg btn-primary" onclick="passvalues();" type="button" value="Submeter" style="display: flex; margin: auto;"/>
+                </a>
+              </div>
+      
+              </div>
+            </form>
 
     </main>
     <footer class="footer left border-top text-muted bg-light">
