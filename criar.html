@@ -76,21 +76,23 @@
               <div class="card" data-step>
                 <h3 class="step-title">Este é o primeiro passo</h3>
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" style="margin-bottom:20px;">
-                  <label for="floatingInput" required>Endereço de Email</label>
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required style="margin-bottom:20px;">
+                  <label for="floatingInput">Endereço de Email</label>
                 </div>
                 <div class="form-floating">
                   <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required style="margin-bottom:20px;">
-                  <label for="floatingPassword">Password</label>
+                  <label for="floatingPassword">Palavra-Passe</label>
                 </div>
                 <div class="form-floating">
                   <input type="text" class="form-control" id="floatingUsername" placeholder="Username" required style="margin-bottom:20px;">
-                  <label for="floatingUsername">Username</label>
+                  <label for="floatingUsername">Nome de Utilizador</label>
                 </div>
-                <a href="index.html">
-                  <input class="btn btn-lg btn-primary" onclick="passvalues();" type="button" value="Submeter" style="display: flex; margin: auto;"/>
-                </a>
-              </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingMorada" placeholder="Username" required style="margin-bottom:20px;">
+                  <label for="floatingMorada">Coloque a sua Morada</label>
+                </div>
+                  <input class="btn btn-lg btn-dark" onclick="window.location.href='/index.html'" type="button" value="Criar" style="display: flex; margin: auto;"/>
+                </div>
       
               </div>
             </form>
