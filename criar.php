@@ -1,3 +1,24 @@
+<?php
+  if(isset($_POST['submit']))
+  {
+      session_start();
+      include_once('config.php');
+
+      $email = $_POST['email'];
+      $nome = $_POST['nome'];
+      $morada = $_POST['morada'];
+      $nomecartao = $_POST['ncartao'];
+      $numerocartao = $_POST['nucartao'];
+      $datacartao = $_POST['dcartao'];
+      $cvv = $_POST['cvv'];
+      $password = $_POST['passworde'];
+      
+      $result = mysqli_query($conexao, "INSERT INTO clientes(email, nome, morada, nomecartao, numerocartao, datacartao, cvv, passworde) 
+      VALUES ('$email', '$nome', '$morada', '$nomecartao', '$numerocartao', '$datacartao', '$cvv', '$password')");
+      header('Location: index.html');
+  }
+?>
+
 <!doctype html>
 <html lang="pt-pt">
 
@@ -21,7 +42,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/estilos.css">
 
-  <title>Conclusão da Compra</title>
+  <title>Registar</title>
   <style>
     body {
       background-color: rgb(255, 255, 255);
@@ -70,49 +91,31 @@
 
     <main class="flex-fill">
       <div class="container">
-        <h1>Insira os dados do cartão</h1>
-        <h3 class="mb-4">
-          Selecione a forma de pagamento e clique em <b>Continuar</b> para prosseguir para a <b>seleção da forma de
-            pagamento</b>.
-        </h3>
-        <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
-            <div class="mb-4 mx-2 flex-even">
-              <input type="radio" class="btn-check" name="endereco" autocomplete="off" id="pag2">
-              <label class="btn btn-outline-dark p-4 h-100 w-100" for="pag2">
-                <h3>
-                  <b class="text-dark">Cartão de Crédito</b>
-                </h3>
-                  <hr>
-                  <form action="">
-                    <div class="form-floating mb-3">
-                      <input type="text" id="txtnome1" class="form-control" placeholder=" " autofocus>
-                      <label for="txtnome1" class="text-black-50">Nome Impresso no Cartão de Crédito</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="text" id="txtnumero" class="form-control" placeholder=" " autofocus>
-                      <label for="txtnumero" class="text-black-50">Número do Cartão de Crédito</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="text" id="txtvalidade" class="form-control" placeholder=" " autofocus>
-                      <label for="txtvalidade" class="text-black-50">Validade(mm/aa)</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="text" id="txtcvv" class="form-control" placeholder=" " autofocus>
-                      <label for="txtcvv" class="text-black-50">CVV(3 dígitos)</label>
-                    </div>
-                  </form>
-            </div>
-            </label>
-          </div>
-        </div>
-        <div class="text-end border border-top-0 rounded-bottom p-4 pb-0">
-          <div style=text-align:center>
-          <a href="/conclusao_endereco.html" class="btn btn-outline-dark btn-lg mb-4">
-            Voltar ao Endereço
-          </a>
-          <a href="/conclusao_pedido.html" class="btn btn-dark btn-lg ms-2 mb-4">Finalizar</a>
-        </div>
-      </div>
+        <div class="row justify-content-center">
+            <form data-multi-step action="criar.php" method="POST">
+              <div class="card" data-step>
+                <h3 class="step-title">Este é o primeiro passo</h3>
+                <div class="form-floating">
+                  <input type="email" class="form-control" name="email" placeholder="name@example.com" required style="margin-bottom:20px;">
+                  <label for="email">Endereço de Email</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" name="passworde" placeholder="Password" required style="margin-bottom:20px;">
+                  <label for="passworde">Palavra-Passe</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" name="username" placeholder="Username" required style="margin-bottom:20px;">
+                  <label for="username">Nome de Utilizador</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" name="morada" placeholder="Username" required style="margin-bottom:20px;">
+                  <label for="morada">Coloque a sua Morada</label>
+                </div>
+                  <input class="btn btn-lg btn-dark" name="submit" id="submit" type="submit" style="display: flex; margin: auto;"/>
+                </div>
+      
+              </div>
+            </form>
 
     </main>
     <footer class="footer left border-top text-muted bg-light">
