@@ -71,34 +71,26 @@
     <main class="flex-fill">
       <div class="container">
         <div class="row justify-content-center">
-          <form action="col-sm-10 col-md-8 col-lg-6">
             <h1>Fazer Login</h1>
+            <form action="login2.php" method="POST">
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" placeholder=" " autofocus required>
+                    <label for="email">E-mail</label>
+                </div>
 
-            <div class="form-floating mb-3">
-              <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
-              <label for="txtEmail">E-mail</label>
-            </div>
+                <div class="form-floating mb-3">
+                    <input type="password" name="passworde" class="form-control" placeholder=" " autofocus required>
+                    <label for="passworde">Palavra-Passe</label>
+                </div>
 
-            <div class="form-floating mb-3">
-              <input type="password" id="txtpasse" class="form-control" placeholder=" " autofocus>
-              <label for="txtpasse">Palavra-Passe</label>
-            </div>
+                <button type="button" onclick="window.location.href='/index.html'" class="btn btn-lg btn-dark">Entrar</button>
+                <p class="mt-3">
+                    Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
+                </p>
 
-            <div class="form-check mb-3">
-              <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
-              <label for="chkLembrar" class="form-check-label">Não esquecer</label>
-            </div>
-
-            <button type="button" onclick="window.location.href='/index.html'"
-              class="btn btn-lg btn-dark">Entrar</button>
-            <p class="mt-3">
-              Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
-            </p>
-
-            <p class="mt-3">
-              Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html"> Clica aqui</a> para recuperá-la.
-            </p>
-          </form>
+                <p class="mt-3">
+                    Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html">Clica aqui</a> para recuperá-la.
+                </p>
         </div>
       </div>
 
