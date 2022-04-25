@@ -50,10 +50,10 @@
           <div class="align-self-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="/criar.html" class="nav-link text-white">Criar conta</a>
+                <a href="criar.php" class="nav-link text-white">Criar conta</a>
               </li>
               <li class="nav-item">
-                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                <a href="login.php" class="nav-link text-white">Entrar</a>
               </li>
               <li class="nav-item">
                 <span class="badge rounded-pill bg-light text-black position-absolute ms-3 mt-0"
@@ -70,7 +70,8 @@
 
     <main class="flex-fill">
       <div class="container">
-        <div class="row justify-content-center">
+        <body>
+          <div class="row justify-content-center">
             <h1>Fazer Login</h1>
             <form action="login2.php" method="POST">
                 <div class="form-floating mb-3">
@@ -83,7 +84,7 @@
                     <label for="passworde">Palavra-Passe</label>
                 </div>
 
-                <button type="button" onclick="window.location.href='/index.html'" class="btn btn-lg btn-dark">Entrar</button>
+                <input class="inputSubmit" type="submit" name="submit" value="Entrar">
                 <p class="mt-3">
                     Ainda não tens uma conta? <a href="/criar.html">Clica aqui</a> para criares uma conta.
                 </p>
@@ -91,7 +92,9 @@
                 <p class="mt-3">
                     Esqueceste da Palavra-Passe? <a href="/recuperarpasse.html">Clica aqui</a> para recuperá-la.
                 </p>
-        </div>
+            </form>
+          </div>
+       </body>
       </div>
 
     </main>

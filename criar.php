@@ -5,17 +5,20 @@
       include_once('config.php');
 
       $email = $_POST['email'];
-      $nome = $_POST['nome'];
+      $nome = $_POST['username'];
       $morada = $_POST['morada'];
-      $nomecartao = $_POST['ncartao'];
-      $numerocartao = $_POST['nucartao'];
-      $datacartao = $_POST['dcartao'];
-      $cvv = $_POST['cvv'];
-      $password = $_POST['passworde'];
+      $passworde = $_POST['passworde'];
       
-      $result = mysqli_query($conexao, "INSERT INTO clientes(email, nome, morada, nomecartao, numerocartao, datacartao, cvv, passworde) 
-      VALUES ('$email', '$nome', '$morada', '$nomecartao', '$numerocartao', '$datacartao', '$cvv', '$password')");
-      header('Location: index.html');
+      include_once('config.php');
+      $email = $_POST['email'];
+      $nome = $_POST['username'];
+      $morada = $_POST['morada'];
+      $passworde = $_POST['passworde'];
+
+      $result = mysqli_query($conexao, "INSERT INTO clientes(email, nome, morada, passworde)
+      VALUES('$email', '$nome', '$morada', '$passworde')");
+
+      header('Location:login.php');
   }
 ?>
 
@@ -71,10 +74,10 @@
           <div class="align-self-end">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="/criar.html" class="nav-link text-white">Criar conta</a>
+                <a href="criar.php" class="nav-link text-white">Criar conta</a>
               </li>
               <li class="nav-item">
-                <a href="/login.html" class="nav-link text-white">Entrar</a>
+                <a href="login.php" class="nav-link text-white">Entrar</a>
               </li>
               <li class="nav-item">
                 <span class="badge rounded-pill bg-light text-black position-absolute ms-3 mt-0"
@@ -92,9 +95,9 @@
     <main class="flex-fill">
       <div class="container">
         <div class="row justify-content-center">
-            <form data-multi-step action="criar.php" method="POST">
+            <form action="criar.php" method="POST">
               <div class="card" data-step>
-                <h3 class="step-title">Este é o primeiro passo</h3>
+                <h3 class="step-title">Coloque os seus Dados</h3>
                 <div class="form-floating">
                   <input type="email" class="form-control" name="email" placeholder="name@example.com" required style="margin-bottom:20px;">
                   <label for="email">Endereço de Email</label>

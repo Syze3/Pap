@@ -1,8 +1,19 @@
+<?php
+    session_start();
+    //print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['passworde']) == true))
+    {
+      unset($_SESSION['email']);
+      unset($_SESSION['passworde']);
+      header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+?>
 <!doctype html>
 <html lang="pt-pt">
 
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -50,12 +61,11 @@
           </ul>
           <div class="align-self-end">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="criar.php" class="nav-link text-white">Criar conta</a>
-              </li>
-              <li class="nav-item">
-                <a href="login.php" class="nav-link text-white">Entrar</a>
-              </li>
+              <?php
+                  echo "<h1>Olá Sr.(a) <u>$logado</u></h1>";
+              ?>
+              <div class="d-flex">
+                <a href="sair.php" class="btn btn-danger me-5">Sair</a>
               <li class="nav-item">
                 <span class="badge rounded-pill bg-light text-black position-absolute ms-3 mt-0"
                   title="5 produto(s) no carrinho"><small>5</small></span>

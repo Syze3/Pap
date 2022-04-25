@@ -4,27 +4,36 @@
     {
         include_once('config.php');
         $email = $_POST['email'];
-        $password = $_POST['passworde'];
+        $passworde = $_POST['passworde'];
 
-        $sql = "SELECT * FROM clientes WHERE email = '$email and passworde = '$password'";
+        //print_r('email: ' . $email);
+        //print_r('<br>');
+        //print_r('passworde: ' . $senha);
+
+        $sql = "SELECT * FROM clientes WHERE email = '$email' and passworde = '$passworde'";
 
         $result = $conexao->query($sql);
+
+        //print_r($sql);
+        //print_r($result);
 
         if(mysqli_num_rows($result) < 1)
         {
             unset($_SESSION['email']);
             unset($_SESSION['passworde']);
-            header('Location: criar.php');
+            header('Location:login.php');
         }
         else
         {
             $_SESSION['email'] = $email;
-            $_SESSION['passworde'] = $password;
-            header('Location: indexregistado.php');
+            $_SESSION['passworde'] = $passworde;
+            header('Location:index.php');
         }
+
     }
     else
     {
+        
         header('Location: login.php');
     }
 ?>
