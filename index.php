@@ -52,24 +52,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav flex-grow-1">
             <li class="nav-item">
-              <a class="nav-link text white active" href="index.html">Principal</a>
+              <a class="nav-link text white active" href="index.php">Principal</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              <a class="nav-link text-white" href="contacto.php">Contacto</a>
             </li>
             </li>
           </ul>
-          <div class="align-self-end">
+          <div style="color: white;">
             <ul class="navbar-nav">
               <?php
-                  echo "<h1>Olá Sr.(a) <u>$logado</u></h1>";
+                  echo "<h5>Olá Sr.(a) <u>$logado</u></h5>";
               ?>
               <div class="d-flex">
                 <a href="sair.php" class="btn btn-danger me-5">Sair</a>
               <li class="nav-item">
                 <span class="badge rounded-pill bg-light text-black position-absolute ms-3 mt-0"
                   title="5 produto(s) no carrinho"><small>5</small></span>
-                <a href="/carrinho.html" class="nav-link text-white">⠀
+                <a href="carrinho.php" class="nav-link text-white">⠀
                   <i class="bi-cart" style="font-size:20px;line-height:24px;"></i>
                 </a>
               </li>
@@ -132,19 +132,19 @@
               <nav class="d-inline-block me-3">
                 <ul class="pagination pagination-sm my-0">
                   <li class="page-item">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="index.php">1</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">2</a>
+                    <a class="page-link" href="index2.php">2</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">3</a>
+                    <a class="page-link" href="index3.php">3</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">4</a>
+                    <a class="page-link" href="index4.php">4</a>
                   </li>
                   <li class="page-item">
-                    <a class="page-link" href="#">5</a>
+                    <a class="page-link" href="index5.php">5</a>
                   </li>
                 </ul>
               </nav>
@@ -157,10 +157,6 @@
         <div class="row g-3">
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <a href="produto.html">
                 <img src="img/4.jpg" class="card-img-top" aria-label="⠀">
               </a>
@@ -177,7 +173,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -185,10 +181,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/5.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -209,7 +201,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -217,10 +209,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/6.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -242,7 +230,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -250,10 +238,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/7.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -280,10 +264,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/8.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -301,7 +281,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -309,10 +289,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/9.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -335,7 +311,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -343,10 +319,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/10.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -367,7 +339,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -375,10 +347,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/11.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -393,7 +361,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -401,10 +369,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/12.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -430,7 +394,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -438,10 +402,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/13.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -467,7 +427,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -475,10 +435,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/14.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -496,7 +452,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -504,10 +460,6 @@
           </div>
           <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
             <div class="card text-center bg-light">
-              <a href="#" class="position-absolute end-0 p-2 text-warning" title="Adicionar aos Favoritos"
-                aria-label="⠀">
-                <i class="bi bi-star" style="font-size: 24px; line-height: 24px;"></i>
-              </a>
               <img src="img/15.jpg" class="card-img-top" aria-label="⠀">
               </a>
               <div class="card-header">
@@ -527,7 +479,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="carrinho.html" class="btn btn-dark mt-2 d-block">
+                <a href="carrinho.php" class="btn btn-dark mt-2 d-block">
                   Adicionar ao Carrinho
                 </a>
               </div>
@@ -547,21 +499,21 @@
                   </select>
                 </form>
                 <nav class="d-inline-block me-3">
-                  <ul class="pagination pagination-sm my-0">
-                    <li class="page-item">
-                      <a class="page-link" href="#">1</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">2</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">3</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">4</a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">5</a>
+                <ul class="pagination pagination-sm my-0">
+                  <li class="page-item">
+                    <a class="page-link" href="index.php">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="index2.php">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="index3.php">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="index4.php">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="index5.php">5</a>
                     </li>
                   </ul>
                 </nav>
@@ -585,19 +537,19 @@
 
           <div class="col-12 col-md-4 text-center text-decoration-none">
 
-            <a href="privacidade.html" class="text-decoration-none text-dark">
+            <a href="privacidade.php" class="text-decoration-none text-dark">
               Politica de Privacidade
             </a> <br>
 
-            <a href="sobre.html" class="text-decoration-none text-dark">
+            <a href="sobre.php" class="text-decoration-none text-dark">
               Sobre a Amazon
             </a> <br>
 
-            <a href="termos.html" class="text-decoration-none text-dark">
+            <a href="termos.php" class="text-decoration-none text-dark">
               Termos e Usos da Amazon
             </a> <br>
 
-            <a href="trocas.html" class="text-decoration-none text-dark">
+            <a href="trocas.php" class="text-decoration-none text-dark">
               Trocas e Devoluções
             </a> <br>
 
@@ -605,7 +557,7 @@
 
           <div class="col-12 col-md-4 text-center">
 
-            <a href="contacto.html" class="text-decoration-none text-dark">
+            <a href="contacto.php" class="text-decoration-none text-dark">
               Contacto Pelo Site
             </a> <br> E-mail: <a href="email@dominio.com" class="text-decoration-none text-dark">
               email@dominio.com
